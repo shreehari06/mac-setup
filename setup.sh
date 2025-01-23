@@ -49,6 +49,15 @@ pbcopy < ~/.ssh/id_ed25519.pub
 echo "SSH key copied to clipboard. Please add it to your GitHub account - https://github.com/settings/keys"
 read -p "Press enter to continue"
 
+# Install NVM (Node Version Manager) and Node LTS
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+nvm install --lts
+nvm use --lts
+node -v
+npm -v
+
 
 # Show hidden files in Finder
 defaults write com.apple.finder AppleShowAllFiles -bool true

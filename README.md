@@ -1,6 +1,6 @@
 # mac-setup
 
-This script automates the setup of a macOS development environment, including the installation of Homebrew, Oh My Zsh, Powerlevel10k theme, zsh plugins, Git configuration, and SSH key generation.
+This script automates the setup of a macOS development environment, including the installation of Homebrew, Oh My Zsh, Powerlevel10k theme, zsh plugins, Git configuration, SSH key generation, and Node.js setup.
 
 ## Features
 
@@ -12,6 +12,7 @@ This script automates the setup of a macOS development environment, including th
 - Generates an SSH key and adds it to the SSH agent
 - Copies the SSH key to the clipboard for easy addition to GitHub
 - Shows hidden files in Finder
+- Installs NVM (Node Version Manager) and the latest LTS version of Node.js
 
 ## Usage
 
@@ -53,6 +54,7 @@ This script automates the setup of a macOS development environment, including th
 - The script assumes the use of the `ed25519` algorithm for SSH key generation.
 - The script modifies your `.zshrc` file to include the Powerlevel10k theme and zsh plugins.
 - The script configures Git with the provided user name and email.
+- The script installs NVM and the latest LTS version of Node.js.
 
 ## License
 
