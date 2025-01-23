@@ -41,6 +41,15 @@ source ~/.zshrc
 git config --global user.name "Shreehari Thakral"
 git config --global user.email "shreehari.thakral06@gmail.com"
 
+# ssh
+ssh-keygen -t ed25519 -C "shreehari.thakral@gmail.com"
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed25519
+pbcopy < ~/.ssh/id_ed25519.pub
+echo "SSH key copied to clipboard. Please add it to your GitHub account."
+read -p "Press enter to continue"
+
+
 # Show hidden files in Finder
 defaults write com.apple.finder AppleShowAllFiles -bool true
 # Restart Finder to apply changes
