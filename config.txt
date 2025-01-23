@@ -1,0 +1,2 @@
+GIT_USERNAME="Shreehari Thakral"
+GIT_EMAIL="shreehari_thakral@mckinsey.com"
