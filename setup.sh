@@ -60,6 +60,10 @@ npm -v
 
 export NODE_PATH=$NODE_PATH:`npm root -g`
 
+echo 'killPort () {
+  kill -9 $(lsof -t -i:$1)
+}' >> ~/.zshrc
+
 # Show hidden files in Finder
 defaults write com.apple.finder AppleShowAllFiles -bool true
 # Restart Finder to apply changes
