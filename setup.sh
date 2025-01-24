@@ -60,6 +60,9 @@ npm -v
 
 export NODE_PATH=$NODE_PATH:`npm root -g`
 
+# install apps
+brew install stats
+
 echo 'killPort () {
   kill -9 $(lsof -t -i:$1)
 }' >> ~/.zshrc
