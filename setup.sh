@@ -58,6 +58,7 @@ nvm use --lts
 node -v
 npm -v
 
+export NODE_PATH=$NODE_PATH:`npm root -g`
 
 # Show hidden files in Finder
 defaults write com.apple.finder AppleShowAllFiles -bool true
